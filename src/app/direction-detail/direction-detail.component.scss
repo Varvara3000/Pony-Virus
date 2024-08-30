@@ -1,0 +1,23 @@
+.direction-detail__wrapper{
+  background: url("/assets/Ponyville.jpg");
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.direction-detail__text{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3A5F0B;
+}
+.direction-detail-text__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

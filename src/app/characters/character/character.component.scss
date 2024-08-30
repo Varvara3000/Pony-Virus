@@ -1,0 +1,40 @@
+.character{
+  &-item{
+    &:hover{
+      transform:scale(1.2) ;
+      transition: 0.5s ease;
+    }
+    padding: 20px;
+    background-color: #C4AEAD;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #C25A7C double 10px;
+    cursor: pointer;
+    &__img{
+      border-radius: 15px;
+      border: #C25A7C double 10px;
+      width: calc((100vw / 6) - 140px);
+      height: calc((100vw / 6) - 140px);
+    }
+    &__title{
+   font-size: 20px;
+      color: #254117;
+      padding: 10px;
+    }
+    &__subtitle{
+      font-size: 20px;
+      color: #254117;
+    padding: 10px;
+    }
+  }
+
+}
+.active-pony{
+  border: olivedrab double 10px;
+  background-color: darkolivegreen;
+  transform:scale(1.2) ;
+
+}

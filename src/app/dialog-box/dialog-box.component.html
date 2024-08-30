@@ -1,0 +1,17 @@
+
+<div class="dialog-box__wrapper">
+  <img [src]="img"  alt="" class="dialog-box__img">
+  <div class="dialog-box__text">{{dialog}}</div>
+  <button
+    (click)="back()"
+    class="dialog-box-return__button">Назад</button>
+</div>
+
+
+
+<div *ngIf="showImage" class="zombie-pony">
+  <img src="">
+</div>
+
+
+

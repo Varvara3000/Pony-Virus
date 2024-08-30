@@ -1,0 +1,17 @@
+<div class="characters-item__wrapper">
+  <div class="characters-items">
+    <app-character
+      [chosenPony]="chosenPony"
+      (click)="chosedPony(pony)"
+      [pony]="pony"
+      *ngFor="let pony of ponies"></app-character>
+  </div>
+</div>
+<div class="characters-button__wrapper">
+  <div
+    (click)="next()"
+    *ngIf="chosenPony !== undefined" class="characters-button__continue">Продолжить...</div>
+</div>
+
+
+

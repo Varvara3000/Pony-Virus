@@ -1,0 +1,18 @@
+.btn{
+  width: 50px;
+  height: 25px;
+  background-color: olive;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+ .input{
+   width: 50px;
+   height: 25px;
+   margin-bottom: 10px;
+ }
+.button-wrapper{
+  display: flex;
+  gap: 5px;
+}

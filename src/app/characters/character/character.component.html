@@ -1,0 +1,11 @@
+
+    <div
+      [ngClass]="chosenPony?.id === pony.id ?  'active-pony':''"
+      class="character-item">
+      <img class="character-item__img" [src]="pony.img">
+      <p class="character-item__title">{{ pony.name }}</p>
+      <div class="character-item__characteristics">
+        <p class="character-item__subtitle" *ngFor="let characteristic of pony.characteristics">{{ characteristic }}</p>
+      </div>
+    </div>
+

@@ -1,0 +1,22 @@
+<app-introduction
+  (introductionButtonClicked)="changeStep('character')"
+  *ngIf="step === 'introduction'"></app-introduction>
+<app-characters
+  (weChosedPony) = "setChosenPony($event)"
+  (charactersButtonClicked) = "changeStep('directions')"
+  *ngIf="step === 'character'"></app-characters>
+<app-direction
+ (goBackButtonInDialogBox)="goToBack('character')"
+  (weChosedDirection) = "setChosenDirection($event)"
+  (directionButtonClicked) = "changeStep('direction-detail')"
+  [chosenPony]="chosenPony"
+ *ngIf="step === 'directions'"
+></app-direction>
+<app-direction-detail
+(goBackButtonInDialogBox)="goToBack('directions')"
+  [direction]="direction"
+  [chosenPony]="chosenPony"
+*ngIf="step === 'direction-detail'"
+></app-direction-detail>
+
+

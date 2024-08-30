@@ -1,0 +1,14 @@
+<div
+  [ngStyle]="{background:'url('+direction.img+')'}"
+  class="direction-detail__wrapper">
+  <div
+    class="direction-detail-text__wrapper">
+  <div class="direction-detail__text">{{direction.text}}</div>
+  </div>
+  <app-dialog-box
+    (dialogBoxButtonClicked)="back()"
+    [img]="chosenPony.img"
+  [dialog]="getTextByDirectionPony()"
+  ></app-dialog-box>
+</div>
+

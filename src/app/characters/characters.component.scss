@@ -1,0 +1,29 @@
+.characters-item__wrapper{
+  display: flex;
+ gap: 10px;
+  margin: 50px 20px 180px 20px;
+}
+.characters-items{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.characters-button__wrapper{
+  display: flex;
+  justify-content: end;
+}
+.characters-button__continue{
+  width: 300px;
+  height: 100px;
+  background-color: #3A5F0B ;
+  border-radius: 10px;
+  border: #7F4E52 double 10px; ;
+  color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}

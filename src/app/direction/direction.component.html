@@ -1,0 +1,24 @@
+
+<div class="directions-items">
+<div
+  [ngClass]="chosenDirection?.id === direction.id ? 'active-direction':''"
+  (click)="chosedDirection(direction)"
+  *ngFor="let direction of directions"
+  class="directions-item">
+  <img [src]="direction.img" alt="" class="directions-item__img">
+  <div class="directions-item__text">{{direction.text}}</div>
+</div>
+</div>
+<div class="directions-button__wrapper">
+<div
+(click)="next()"
+*ngIf="chosenDirection !== undefined"
+  class="direction-button__continue">Продолжить...</div>
+</div>
+<app-dialog-box
+  (dialogBoxButtonClicked)="back()"
+  [img]="chosenDirection?.img || ''"
+  [dialog]="chosenPony.dialog"
+></app-dialog-box>
+
+
